@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/coronaweb.png';
+import logo from '../assets/images/logo.png';
 import userIcon from '../assets/images/user-icon.png';
 import '../assets/styles/Header.scss';
 

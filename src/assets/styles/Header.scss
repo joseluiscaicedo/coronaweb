@@ -1,7 +1,5 @@
 .header {
   align-items: center;
-  background: #8f57fd;
-  color: white;
   display: flex;
   height: 100px;
   justify-content: space-between;
@@ -11,7 +9,7 @@
 
 .header__img {
   margin-left: 10px;
-  width: 100px;
+  width: 200px;
 }
 
 .header__menu {
@@ -37,7 +35,6 @@
 }
 
 .header__menu li a {
-  color: white;
   text-decoration: none;
 }
 
