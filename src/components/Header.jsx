@@ -1,4 +1,5 @@
 import React from 'react';
+import { LoginButton } from './LoginButton';
 import logo from '../assets/images/logo.png';
 import userIcon from '../assets/images/user-icon.png';
 import '../assets/styles/Header.scss';
@@ -12,7 +13,8 @@ const Header = () => (
         <p aria-labelledby='Profile'>Profile</p>
       </div>
       <ul>
-        <li><a href='/'>Account</a></li>
+        <LoginButton />
+        {/* <li><a href='/'>Account</a></li> */}
         <li><a href='/'>Close Session</a></li>
       </ul>
     </div>
