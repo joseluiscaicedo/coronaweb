@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development"
+    "start": "webpack serve --mode development --env development",
+    "server": "node server/main.js",
+    "server:prod": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/joseluiscaicedo/coronaweb#readme",
   "dependencies": {
     "@auth0/auth0-react": "^1.5.0",
+    "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
