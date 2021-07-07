@@ -8,19 +8,21 @@ import CarouselItem from '../components/CarouselItem';
 import NotFound from '../components/NotFound';
 import '../assets/styles/App.scss';
 
-const App = () => (
-  <div className='App'>
-    <NotFound />
-    <Header />
-    <Search />
-    <Categories>
-      <Carousel>
-        <CarouselItem />
-      </Carousel>
-    </Categories>
+const App = () => {
+  return (
+    <div className='App'>
+      <Header />
+      <Search />
+      <Categories>
+        <Carousel>
+          <CarouselItem />
+        </Carousel>
+      </Categories>
+      <NotFound />
 
-    <Footer />
-  </div>
-);
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
