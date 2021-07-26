@@ -14,7 +14,6 @@ const DataCovid = () => {
       .then((data) => setCountry(data.Countries))
       .catch((error) => console.log('error', error));
   }, []);
-  console.log(country);
 
   return (
     <>
@@ -22,7 +21,7 @@ const DataCovid = () => {
         <section className='{country.Country}'>
 
           {country.map((country) => (
-            <div id={country.ID}>
+            <div id={country.ID} key={country.ID}>
               <h2 id={country.Country} key={country.Country}>{country.Country}</h2>
               <h3 id={country.TotalConfirmed} key={country.TotalConfirmed}>
                 {' '}

@@ -1,13 +1,12 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-import Header from '../components/Header';
 import Search from '../components/Search';
-import Footer from '../components/Footer';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import NotFound from '../components/NotFound';
+
+import DataCovid from '../components/DataCovid';
 
 import '../assets/styles/App.scss';
 
@@ -26,7 +25,7 @@ const Home = () => {
         </>
       ) : (
         <>
-          <NotFound />
+          <DataCovid />
         </>
       )}
     </main>
