@@ -1,9 +1,9 @@
 import React from 'react';
+import '../assets/styles/Loading.scss'
 
 const Loading = () => {
   return (
-    <div>
-      Loading
+    <div id='Loading' className='Loading'>
     </div>
   );
 };
