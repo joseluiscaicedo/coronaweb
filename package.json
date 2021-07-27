@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This is a project to see Covid cases by country, you have two options, the first is to select the country on the world map and the second you can search by country",
   "main": "index.js",
+  "engines": {
+    "node": "14.x",
+    "npm": "7.x"
+  },
   "scripts": {
     "test": "jest",
     "build": "webpack --mode production",
