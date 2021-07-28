@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate Header Generates Snapshot for COMPONENT Component 1`] = `
+<header
+  aria-label="header title"
+  class="header"
+>
+  <img
+    alt="coronaweb logo"
+    class="header__img"
+    src="[object Object]"
+  />
+  <div
+    class="header__menu"
+  >
+    <div
+      class="header__menu"
+    >
+      <img
+        alt="user Icon"
+        id="menu__img"
+        src="[object Object]"
+      />
+      <button
+        class="ButtonLogin"
+        id="ButtonLogin"
+        type="button"
+      >
+        Login
+      </button>
+    </div>
+  </div>
+</header>
+`;

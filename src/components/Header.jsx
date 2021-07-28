@@ -26,7 +26,7 @@ const Header = () => {
           (
             <>
               <div className='header__menu'>
-                <img src={userIcon} alt='user Icon' />
+                <img id='menu__img' src={userIcon} alt='user Icon' />
                 <LoginButton />
               </div>
             </>

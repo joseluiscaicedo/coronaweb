@@ -3,8 +3,19 @@ import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
 import Header from './Header'
 
-test('renders content', () => {
+describe('validate Header', () =>{
+  const header = render(<Header />)
+  test('renders content', () => {
 
-  const component = render(<Header />)
-  console.log(component)
+    expect(header.length)>0;
+
+  });
+
+  test('Generates Snapshot for COMPONENT Component', () => {
+    const { container } = render(
+      <Header />
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
 })

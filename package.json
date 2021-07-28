@@ -12,7 +12,7 @@
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --env development",
     "server": "node server/main.js",
-    "server:prod": "npm run build && npm run server"
+    "server:prod": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,6 @@
     "moduleNameMapper": {
       "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
       "^.+\\.(css|less|scss)$": "<rootDir>/src/__mocks__/fileMock.js"
-
     },
     "testEnvironment": "jsdom"
   },
@@ -68,8 +67,8 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
-    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
+    "jest-fetch-mock": "^3.0.3",
     "webpack-dev-server": "^3.11.2"
   }
 }
