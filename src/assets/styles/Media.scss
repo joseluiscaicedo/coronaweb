@@ -1,10 +1,20 @@
+@import "./Vars.scss";
 @media only screen and (max-width: 600px) {
-  .main__description--title {
-    font-size: 30px;
+  .banner{
+    grid-template-columns: minmax(150px, 40%) 1fr;
   }
-
+  .banner .banner__container{
+    font-size: $tinny-size;
+    padding: 0 0 0 28px;
+  }
   .footer {
     align-items: flex-start;
     flex-direction: column;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .banner{
+    height: 400px;
+  }
+  }

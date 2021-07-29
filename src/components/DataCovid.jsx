@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Carousel from './Carousel';
 
 const DataCovid = () => {
   const [country, setCountry] = useState([]);
@@ -24,7 +25,6 @@ const DataCovid = () => {
             <div id={country.ID} key={country.ID}>
               <h2 id={country.Country} key={country.Country}>{country.Country}</h2>
               <h3 id={country.TotalConfirmed} key={country.TotalConfirmed}>
-                {' '}
                 {country.TotalConfirmed}
               </h3>
               <h3 id={country.TotalDeaths}>

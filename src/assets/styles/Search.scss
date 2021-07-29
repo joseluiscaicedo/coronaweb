@@ -1,4 +1,4 @@
-.main {
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
   border-radius: 0px 0px 40px 40px;
 }
 
-.main__title {
+.search__title {
   font-size: 25px;
 }
 
@@ -20,7 +20,7 @@
   margin-bottom: 20px;
   outline: none;
   padding: 0px 20px;
-  width: 70%;
+  width: 90%;
 }
 
 ::placeholder {

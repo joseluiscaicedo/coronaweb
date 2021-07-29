@@ -9,10 +9,10 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode production",
+    "build": "node --max_old_space_size=2560 node_modules/.bin/webpack --mode production",
     "start": "webpack serve --mode development --env development",
     "server": "node server/main.js",
-    "server:prod": "npm run build"
+    "server:prod": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,25 @@
+.banner{
+  background-image: url('https://res.cloudinary.com/josecaicedo/image/upload/v1627427342/coronaweb/Banner_image-COVID_pxtwxz.jpg');
+  min-height: 100%;
+  background-size: cover;
+  background-position-x: center;
+  height: max-content;
+  display: grid;
+  grid-template-columns: minmax(150px, 28%) 1fr;
+}
+
+.banner__container{
+  background-image: linear-gradient(to right,rgba(255,255,255,0.85) 43%,rgba(255,255,255,0) 100%);
+  min-height: 100%;
+  background-size: cover;
+  background-position-x: center;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 28px;
+}
+
+.container__firstparagraph{
+  padding-top: 2rem;
+}

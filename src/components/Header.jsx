@@ -5,8 +5,8 @@ import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 import Profile from './Profile';
 
-import logo from '../assets/images/logo.png';
-import userIcon from '../assets/images/user-icon.png';
+const logo ='https://res.cloudinary.com/josecaicedo/image/upload/v1627426970/coronaweb/logo_yn8r2a.png';
+const userIcon = 'https://res.cloudinary.com/josecaicedo/image/upload/v1627426970/coronaweb/user-icon_o089f9.png';
 
 import '../assets/styles/Header.scss';
 
@@ -20,16 +20,13 @@ const Header = () => {
           <>
             <Profile />
             <LogoutButton />
-            {' '}
           </>
         ) :
           (
-            <>
               <div className='header__menu'>
                 <img id='menu__img' src={userIcon} alt='user Icon' />
                 <LoginButton />
               </div>
-            </>
           )}
       </div>
     </header>
