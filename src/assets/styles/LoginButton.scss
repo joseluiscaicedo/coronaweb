@@ -1,8 +1,12 @@
+@import "./Vars.scss";
 Button{
   background: none;
   border:none;
+  color: $third-color;
 }
 
 Button:hover{
 cursor: pointer;
+color:$main-color;
+transition: 2s;
 }
