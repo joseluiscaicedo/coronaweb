@@ -1,3 +1,4 @@
+@import "./Vars.scss";
 .header {
   align-items: center;
   display: flex;
@@ -5,6 +6,7 @@
   justify-content: space-between;
   top: 0px;
   width: 100%;
+  color:$third-color;
 }
 
 .header__img {
@@ -22,29 +24,6 @@
 
 .header__menu:hover ul, ul:hover {
 	display: block;
-}
-
-.header__menu li {
-  margin: 10px 0px;
-}
-
-.header__menu li a {
-  text-decoration: none;
-}
-
-.header__menu li a:hover {
-  text-decoration: underline;
-}
-
-.header__menu--profile {
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-}
-
-.header__menu--profile img {
-  margin-right: 8px;
-  width: 40px;
 }
 
 .menu__img{
