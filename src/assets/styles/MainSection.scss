@@ -1,3 +1,4 @@
+@import "./Vars.scss";
 .banner{
   background-image: url('https://res.cloudinary.com/josecaicedo/image/upload/v1627427342/coronaweb/Banner_image-COVID_pxtwxz.jpg');
   min-height: 100%;
@@ -6,6 +7,7 @@
   height: max-content;
   display: grid;
   grid-template-columns: minmax(150px, 28%) 1fr;
+  color:$main-color;
 }
 
 .banner__container{
