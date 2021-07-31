@@ -1,10 +1,12 @@
+@import "./Vars.scss";
 .footer {
   align-items: center;
   background-color: #212e35;
   display: flex;
   height: 100px;
   width: 100%;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
+  color: $third-color;
 }
 
 .footer a {
@@ -12,8 +14,13 @@
   font-size: 14px;
   padding-left: 30px;
   text-decoration: none;
+  color:inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color:$main-color;
+  transition: 2s;
 }
