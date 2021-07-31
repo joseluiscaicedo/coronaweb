@@ -8,12 +8,9 @@ import '../assets/styles/Home.scss';
 
 const Home = () => {
   const [CovidCountries, setCovidCountries] = useState([]);
+  const APIURL = process.env.APIURL;
   useEffect(() => {
-    const requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-    };
-    fetch('https://api.covid19api.com/summary', requestOptions)
+    fetch(APIURL)
     .then((response) => response.json())
     .then((data) => setCovidCountries(data.Countries))
     .catch((error) => console.log('error', error));

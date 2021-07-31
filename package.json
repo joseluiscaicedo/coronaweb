@@ -62,6 +62,7 @@
     "@types/jest": "^26.0.24",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.6",
+    "dotenv-webpack": "^7.0.3",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.23.4",
