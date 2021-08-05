@@ -17,4 +17,11 @@
   .banner{
     height: 400px;
   }
+}
+
+@media only screen and (min-width: 1048px) {
+  .banner{
+    height: 800px;
   }
+}
+

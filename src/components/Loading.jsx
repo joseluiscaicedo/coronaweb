@@ -3,8 +3,10 @@ import '../assets/styles/Loading.scss'
 
 const Loading = () => {
   return (
-    <div id='Loading' className='Loading'>
-    </div>
+    <section id='containerLoading' className='containerLoading'>
+      <div id='Loading' className='containerLoading__Loading'>
+      </div>
+    </section>
   );
 };
 

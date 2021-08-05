@@ -5,7 +5,6 @@ const backtoHome = 'https://res.cloudinary.com/josecaicedo/image/upload/v1627426
 const delorean = 'https://res.cloudinary.com/josecaicedo/image/upload/v1627426970/coronaweb/Delorean_pfddqk.webp';
 
 const NotFound = () => (
-  <body>
     <section className='notFound'>
       <div className='notFound__imgContainer'>
         <img className='imgContainer__img' src={backtoHome} alt='Back to the Homepage' />
@@ -19,7 +18,6 @@ const NotFound = () => (
         <a aria-describedby='GoOut' className='container__anchor' href='https://www.youtube.com/watch?v=G3AfIvJBcGo'>NO</a>
       </div>
     </section>
-  </body>
 );
 
 export default NotFound;

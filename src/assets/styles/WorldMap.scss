@@ -1,4 +1,9 @@
 @import './Vars.scss';
+.WorldMapContainer__title{
+  color: $third-color;
+  font-size: $medium-size;
+  text-align: center;
+}
 
 .leaflet-container{
   background-color: $secondary-color;
