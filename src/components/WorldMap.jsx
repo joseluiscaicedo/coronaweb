@@ -34,6 +34,7 @@ const WorldMap = ({ countriesGeojson }) => {
       layer.bindPopup(`${selectedCountryCovidCases.Country} <br/>
                       Total Confirmed <br/>
                       ${new Intl.NumberFormat().format(selectedCountryCovidCases.TotalConfirmed)}
+                      <br/>  <a href='/'>more details...</a>
       `);
     }
   };

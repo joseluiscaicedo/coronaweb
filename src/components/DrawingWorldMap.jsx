@@ -3,7 +3,7 @@ import Loading from './Loading';
 import WorldMap from './WorldMap';
 import countriesGeojson from '../data/countries.json';
 
-const Covid = () => {
+const DrawingWorldMap = () => {
   return (
     <div>
       {countriesGeojson.length === 0 ? <Loading /> : (
@@ -15,4 +15,4 @@ const Covid = () => {
   );
 };
 
-export default Covid;
+export default DrawingWorldMap;
