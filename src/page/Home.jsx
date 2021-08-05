@@ -1,31 +1,35 @@
-import React, {useEffect,useState} from 'react';
+import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
+import useFetchData from '../hooks/useFetchData';
 
-import Search from '../components/Search';
 import MainSection from '../components/MainSection';
+import DrawingWorldMap from '../components/DrawingWorldMap';
+import Loading from '../components/Loading';
 
 import '../assets/styles/Home.scss';
 
 const Home = () => {
-  const [CovidCountries, setCovidCountries] = useState([]);
-  const APIURL = process.env.APIURL;
-  useEffect(() => {
-    fetch(APIURL)
-    .then((response) => response.json())
-    .then((data) => setCovidCountries(data.Countries))
-    .catch((error) => console.log('error', error));
-  }, []);
   const { isAuthenticated } = useAuth0();
+  const APIURL = process.env.APIURL;
+  const CovidCountries = useFetchData(APIURL);
+
+  if(!CovidCountries.length) {
+    return < Loading />
+  }
   return (
+    <>
+    {CovidCountries.length === 0 ? <Loading /> : (
     <main className='Home'>
       {isAuthenticated ? (
         <>
-          <Search CovidCountries={CovidCountries} />
+          <DrawingWorldMap countriesCovidCases={CovidCountries} />
         </>
       ) : (
           <MainSection />
       )}
     </main>
+    )}
+    </>
   );
 };
 
