@@ -5,6 +5,7 @@ import NotFound from '../components/NotFound';
 import Home from '../page/Home';
 import Layout from '../components/Layout';
 import DrawingWorldMap from '../components/DrawingWorldMap';
+import Search from '../components/Search';
 
 import '../assets/styles/App.scss';
 
@@ -15,6 +16,7 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/worldmap' component={DrawingWorldMap} />
+          <Route exact path='/search' component={Search} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

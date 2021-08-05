@@ -14,7 +14,7 @@ const Header = () => {
   const { isAuthenticated } = useAuth0();
   return (
     <header aria-label='header title' className='header'>
-      <a href='/worldmap' aria-labelledby='goToWorldMap'>
+      <a href='/worldmap' aria-label='goToWorldMap'>
         <img className='header__img' src={logo} alt='coronaweb logo' />
       </a>
       <div className='header__menu'>
