@@ -6,7 +6,7 @@ the world map🌎 is drawn using leaflet and geojson, also you can see the confi
 1. Webpack
 2. Saas - BEM Methodology
 3. CDN cloudinary
-4 Auth0 Authenticate
+4. uth0 Authenticate
 5. GeoJson
 6. Leaflet
 
