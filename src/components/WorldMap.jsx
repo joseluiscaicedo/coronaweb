@@ -1,26 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { MapContainer, GeoJSON } from 'react-leaflet';
 import Loading from '../components/Loading';
 
 import 'leaflet/dist/leaflet.css';
 import '../assets/styles/WorldMap.scss';
 
-const WorldMap = ({ countriesGeojson }) => {
-
-  const [countriesCovidCases, setCountriesCovidCases] = useState([]);
-
-  useEffect(() => {
-    const requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-    };
-
-    fetch('https://api.covid19api.com/summary', requestOptions)
-      .then((response) => response.json())
-      .then((data) => setCountriesCovidCases(data.Countries))
-      .catch((error) => console.log('error', error));
-  }, []);
-
+const WorldMap = ({ countriesCovidCases,countriesGeojson }) => {
 
   if(!countriesCovidCases.length) {
     return < Loading />
@@ -32,15 +17,16 @@ const WorldMap = ({ countriesGeojson }) => {
 
     if(selectedCountryCovidCases) {
       layer.bindPopup(`${selectedCountryCovidCases.Country} <br/>
-                      Total Confirmed <br/>
-                      ${new Intl.NumberFormat().format(selectedCountryCovidCases.TotalConfirmed)}
-                      <br/>  <a href='/'>more details...</a>
+        Total Confirmed <br/>
+        ${new Intl.NumberFormat().format(selectedCountryCovidCases.TotalConfirmed)}
+        <br/>  <a aria-label='Other Statistics' href='/search/'>Other Statistics...</a>
       `);
     }
   };
 
   return (
-    <div>
+    <div id='WorldMapContainer' className='WorldMapContainer'>
+      <h1 arialabel='WorldMap' id='title' className='WorldMapContainer__title'>World Map With Confirmed Cases Of Covid </h1>
       <MapContainer
         className='container'
         zoom={1.4}
