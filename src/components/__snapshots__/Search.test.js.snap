@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate Search Component Generates Snapshot for Search Component 1`] = `
+<section
+  aria-label="Container Search"
+  class="ContainerSearch"
+>
+  <section
+    class="ContainerSearch__search"
+  >
+    <h1
+      aria-label="search title"
+      class="search__title"
+    >
+      Search by Country
+    </h1>
+    <label
+      aria-labelledby="WriteaCountry"
+      class="search__label"
+      for="WriteaCountry"
+      id="Search"
+      rol="tab"
+    >
+       Write a Country
+      <input
+        aria-label="WriteCountry"
+        autocomplete="Write a country"
+        class="label__input"
+        id="WriteaCountry"
+        name="input"
+        rol="tab"
+        type="text"
+      />
+    </label>
+  </section>
+  <section
+    class="ShowCountries"
+  >
+    <div
+      class="carousel-item"
+    >
+      <div
+        class="carousel-item__details"
+        id="details"
+      >
+        <p
+          class="carousel-item__details--title"
+        />
+        <p
+          aria-label="Total Confirmed"
+          class="carousel-item__details--subtitle"
+        >
+          Total Confirmed 
+          <br />
+          undefined
+        </p>
+        <p
+          aria-label="Total Deaths"
+          class="carousel-item__details--subtitle"
+        >
+          Total Deaths 
+          <br />
+          undefined
+        </p>
+        <p
+          aria-label="Total Recovered"
+          class="carousel-item__details--subtitle"
+        >
+          Total Recovered 
+          <br />
+          undefined
+        </p>
+      </div>
+    </div>
+  </section>
+  ;
+</section>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`validate Header Generates Snapshot for Header Component 1`] = `
+exports[`Generates Snapshot for Layout Component 1`] = `
 <header
   aria-label="header title"
   class="header"

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate LoginButton Component Generates Snapshot for LoginButton Component 1`] = `
+<button
+  class="ButtonLogin"
+  id="ButtonLogin"
+  type="button"
+>
+  Login
+</button>
+`;

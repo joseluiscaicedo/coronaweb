@@ -1,19 +1,19 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
-import Header from './Header'
+import LoginButton from './LoginButton';
 
-describe('validate Header', () =>{
+
+describe('validate LoginButton Component', () =>{
   test('renders content', () => {
-    const header = render(<Header />)
+    const component = render(<LoginButton />)
 
-    expect(header.length)>0;
+    expect(component.length)>0;
 
   });
-
-  test('Generates Snapshot for Header Component', () => {
+  test('Generates Snapshot for LoginButton Component', () => {
     const { container } = render(
-      <Header />
+      <LoginButton />
     );
     expect(container.firstChild).toMatchSnapshot();
   });

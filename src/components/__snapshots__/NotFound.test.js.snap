@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generates Snapshot for NotFound Component 1`] = `
+<section
+  class="notFound"
+>
+  <div
+    class="notFound__imgContainer"
+  >
+    <img
+      alt="Back to the Homepage"
+      class="imgContainer__img"
+      src="https://res.cloudinary.com/josecaicedo/image/upload/v1627426970/coronaweb/backToTheHomepage_txqgtu.png"
+    />
+    <img
+      alt="El Delorean, El Doc y Marti McFly"
+      class="imgContainer__img"
+      src="https://res.cloudinary.com/josecaicedo/image/upload/v1627426970/coronaweb/Delorean_pfddqk.webp"
+    />
+  </div>
+  <div
+    class="notFound__container"
+  >
+    <h1
+      class="container__h1"
+    >
+      404
+    </h1>
+    <h2
+      class="container__h2"
+    >
+      PAGE NOT FOUND
+    </h2>
+    <h3
+      class="container__h3"
+    >
+      BACK TO HOME?
+    </h3>
+    <a
+      aria-describedby="GoToHome"
+      class="container__anchor"
+      href="/"
+    >
+      YES
+    </a>
+    <a
+      aria-describedby="GoOut"
+      class="container__anchor"
+      href="https://www.youtube.com/watch?v=G3AfIvJBcGo"
+    >
+      NO
+    </a>
+  </div>
+</section>
+`;

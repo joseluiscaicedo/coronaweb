@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate mainSection Generates Snapshot for mainSection Component 1`] = `
+<section
+  class="banner"
+  id="banner"
+  role="banner"
+>
+  <div
+    class="banner__container"
+  >
+    <h1>
+      COVID-19 Help Center
+    </h1>
+    <p
+      class="container__firstparagraph"
+    >
+      As your healthcare partner, Coronaweb gives you all the information you need about COVID-19 in one place.
+    </p>
+    <p>
+      Please login or register to stay updated
+    </p>
+  </div>
+</section>
+`;

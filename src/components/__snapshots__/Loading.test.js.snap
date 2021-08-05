@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate Loading Component Generates Snapshot for Loading Component 1`] = `
+<section
+  class="containerLoading"
+  id="containerLoading"
+>
+  <div
+    class="containerLoading__Loading"
+    id="Loading"
+  />
+</section>
+`;
