@@ -18,9 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/joseluiscaicedo/coronaweb.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [reactjs, leaflet, Auth0, saas, Worldmap],
+  "author": "jose caicedo",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/joseluiscaicedo/coronaweb/issues"
   },
