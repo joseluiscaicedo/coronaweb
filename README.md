@@ -4,7 +4,7 @@ the world map🌎 is drawn using leaflet and geojson, also you can see the confi
 
 #Tools to created this App
 1. Webpack
-2. Saas - BEM Methodology
+2. Sass - BEM Methodology
 3. CDN cloudinary
 4. Auth0 Authenticate
 5. GeoJson
